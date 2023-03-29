@@ -7,7 +7,7 @@ import CONSTANTS from '../../constants';
 import styles from './StartContestPage.module.sass';
 import Footer from '../../components/Footer/Footer';
 import ProgressBar from '../../components/ProgressBar/ProgressBar';
-import Header from '../../components/Header/Header';
+import Header from '../../components/Header';
 
 const StartContestPage = props => {
   if (props.userStore.data.role !== CONSTANTS.CUSTOMER) {
