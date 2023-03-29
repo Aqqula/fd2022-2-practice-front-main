@@ -8,7 +8,7 @@ import UserProfile from './pages/UserProfile/UserProfile';
 import ContestCreationPage from './pages/ContestCreation/ContestCreationPage';
 import Home from './pages/Home';
 import LoginPage from './pages/LoginPage/LoginPage';
-import RegistrationPage from './pages/RegistrationPage/RegistrationPage';
+import RegistrationPage from './pages/RegistrationPage';
 import Payment from './pages/Payment/Payment';
 import StartContestPage from './pages/StartContestPage/StartContestPage';
 import Dashboard from './pages/Dashboard/Dashboard';
