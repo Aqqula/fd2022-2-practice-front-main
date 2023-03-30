@@ -1,0 +1,64 @@
+[
+  {
+    "id": 1,
+    "title": "Bronze",
+    "subTitle": "Branding on a budget",
+    "price": {
+      "amount": 299,
+      "currncy": "US$"
+    },
+    "beforeItems": [
+      {
+        "content": "Prize to Winner - $135 (Included)",
+        "tooltip": "Paid to the winning creative at the end of contest. This amount is already included in your package price."
+      },
+      {
+        "content": "Validation Services & Upgrades ($39 value)",
+        "tooltip": "Our agency-style validation features and upgrades provide all the tools you need to complete a successful branding project, start to finish, and select a name with confidence."
+      }
+    ],
+    "items": [
+      {
+        "content": "Matching .com URL",
+        "tooltip": "All submitted names are automatically checked for matching domain name availability. If you are only interested in a name and not a matching .com URL, you can specify that preference during contest creation."
+      }
+    ],
+    "afterItems": [
+      {
+        "content": "Expected 300+ Entries",
+        "tooltip": "Complimentary extension of timeline if you receive less than expected number of entries."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Gold",
+    "subTitle": "Increase participation and basic brand validation",
+    "price": {
+      "amount": 449,
+      "currncy": "US$"
+    },
+    "beforeItems": [
+      {
+        "content": "Prize to Winner - $135 (Included)",
+        "tooltip": "Paid to the winning creative at the end of contest. This amount is already included in your package price."
+      },
+      {
+        "content": "Validation Services & Upgrades ($39 value)",
+        "tooltip": "Our agency-style validation features and upgrades provide all the tools you need to complete a successful branding project, start to finish, and select a name with confidence."
+      }
+    ],
+    "items": [
+      {
+        "content": "Matching .com URL",
+        "tooltip": "All submitted names are automatically checked for matching domain name availability. If you are only interested in a name and not a matching .com URL, you can specify that preference during contest creation."
+      }
+    ],
+    "afterItems": [
+      {
+        "content": "Expected 300+ Entries",
+        "tooltip": "Complimentary extension of timeline if you receive less than expected number of entries."
+      }
+    ]
+  }
+]

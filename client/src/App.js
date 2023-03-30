@@ -18,6 +18,7 @@ import ChatContainer from './components/Chat/ChatComponents/ChatContainer/ChatCo
 import OnlyNotAuthorizedUserHoc from './components/OnlyNotAuthorizedUserHoc/OnlyNotAuthorizedUserHoc';
 import CONSTANTS from './constants';
 import browserHistory from './browserHistory';
+import PricingPage from './pages/PricingPage';
 
 class App extends Component {
   render() {
@@ -36,6 +37,7 @@ class App extends Component {
         />
         <Switch>
           <Route exact path="/" component={Home} />
+          <Route exact path="/pricing" component={PricingPage} />
           <Route
             exact
             path="/login"
