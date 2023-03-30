@@ -9,6 +9,7 @@ import styles from './Home.module.sass';
 import carouselConstants from '../../carouselConstants';
 import Spinner from '../../components/Spinner/Spinner';
 import Advantages from '../../components/Advantages';
+import CollectionNames from '../../components/CollectionNames';
 
 const Home = props => {
   const [index, setIndex] = useState(0);
@@ -45,10 +46,7 @@ const Home = props => {
                 <span className={styleName}>{text}</span>
               </div>
               <p>
-                Launch a naming contest to engage hundreds of naming experts as
-                you’re guided through our agency-level naming process. Or,
-                explore our hand-picked collection of premium names available
-                for immediate purchase
+                Launch a naming contest to engage hundreds of naming experts as you’re guided through our agency-level naming process. Or, explore our hand-picked collection of premium names available for immediate purchase
               </p>
               <div className={styles.button}>
                 <Link className={styles.button__link} to='/dashboard'>
@@ -56,6 +54,7 @@ const Home = props => {
                 </Link>
               </div>
             </div>
+            <CollectionNames/>
             <div className={styles.greyContainer}>
               <SlideBar
                 images={carouselConstants.mainSliderImages}
