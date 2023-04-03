@@ -7,7 +7,7 @@ const PricingPage = () => {
   return (
     <>
       <Header />
-      <PricingList />
+      <PricingList/>
       <Footer />
     </>
   );

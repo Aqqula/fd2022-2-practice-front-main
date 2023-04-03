@@ -1,0 +1,49 @@
+@use '/src/common/styles/breakpoints' as bp;
+
+.heading {
+  margin: 2rem;
+  padding-left: 5px;
+  border-left: 5px solid #28d2d0;
+  border-radius: 5px;
+  font-size: 3rem;
+  font-weight: bolder;
+  color: #555;
+  & > span {
+    color: #28d2d0;
+  }
+}
+
+.main {
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  &>*{
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: bp.$sm) {
+  .container {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    max-width: 95%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: bp.$lg) {
+  .container {
+    max-width: 80%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: bp.$lg) {
+  .container {
+    max-width: 68%;
+  }
+}

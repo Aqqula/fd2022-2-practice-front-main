@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Pricing from './Pricing';
 import dataList from './data.json';
+import styles from './PricingList.module.scss';
 
 const priceColors = ['#e0b48d', '#e8b954', '#555', '#28d2d0'];
 const initialState = dataList.map((price) => ({
@@ -27,7 +28,14 @@ const PricingList = () => {
       isOpen={priceOpen[i]}
     />
   );
-  return <section>{dataList.map(mapDataList)}</section>;
+  return (
+  <section className={styles.main}>
+    <h2 className={styles.heading}>Pricing for your <span>Logo</span></h2>
+    <section className={styles.container}>
+      {dataList.map(mapDataList)}
+    </section>
+  </section>
+  );
 };
 
 export default PricingList;

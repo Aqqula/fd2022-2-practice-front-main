@@ -1,9 +1,252 @@
-.content{
+@use '/src/common/styles/breakpoints' as bp;
+@use '/src/common/styles/colors' as *;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 95%;
+  margin: 0.5rem 0;
+  border: 5px solid $default-color;
+  .btn {
+    width: 95%;
+    padding: 0.8rem 0;
+    margin: 15px 15px;
+    border: none;
+    border-radius: 5px;
+    color: $default-color;
+    font-weight: 500;
+  }
+}
+
+.header {
+  display: flex;
+  border: 5px solid $default-color;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  & > h2 {
+    margin-right: 10px;
+  }
+  & > p {
+    margin-right: auto;
+  }
+  & > button {
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+    position: relative;
+  }
+}
+
+.content,
+.content_items {
+  position: relative;
+  font-size: 1.1rem;
+  width: 95%;
+  padding: 15px;
+  & > span {
+    display: none;
+  }
+  & > span:hover {
+    display: block;
+  }
+}
+
+.content::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0px 15px;
+  border-top: 2px solid #00000028;
+  content: '';
+}
+
+.content_items {
+  font-size: 0.9rem;
+  list-style-type: none;
+  margin: 0px 15px;
+}
+.content_items::before {
+  content: '✔';
+  margin-right: 0.5rem;
+}
+
+@media screen and (min-width: bp.$sm) {
+  .header {
+    border: 10px solid $default-color;
+    flex-direction: column;
+    min-height: 240px;
+    justify-content: start;
+    transition: 0.2s linear;
+    & > h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    & > p {
+      margin-right: 0;
+    }
+    :nth-child(3) {
+      margin-top: auto;
+      font-weight: 500;
+      text-align: right;
+      font-size: 1.7rem;
+    }
+  }
+  .container {
+    min-width: 24%;
+    max-width: 24%;
+    padding-bottom: 3rem;
+    .btn {
+      width: 95%;
+      margin: 0;
+    }
+  }
+  .container:hover {
+    .header {
+      background-color: rgba(255, 252, 248, 0.753);
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+        0 10px 10px rgba(0, 0, 0, 0.22);
+    }
+  }
+  .subTitle {
+    font-weight: 100;
+    font-size: 1.1rem;
+  }
+
+  .content,
+  .content_items {
+    & > span {
+      display: block;
+    }
+    & > span:hover {
+      display: block;
+    }
+  }
+
+  .content {
+    width: 98%;
+    padding: 25px 0;
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
+
+  .tooltip {
+    visibility: hidden;
+    position: absolute;
+    bottom: -30px;
+    right: -255px;
+    max-width: 255px;
+    z-index: 999;
+    line-height: 20px;
     padding: 10px;
-    & > span{
-        display: none;
+    font-size: 14px;
+    text-align: center;
+    color: #555;
+    background: rgb(223, 223, 223);
+    border: transparent;
+    border-radius: 5px;
+    box-shadow: 1px 2px 5px 0 rgba(0, 0, 0, 0.4);
+    &:after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-width: 10px;
+      border-style: solid;
+      border-color: transparent rgb(223, 223, 223) transparent transparent;
+      top: 30%;
+      left: -18px;
     }
-    &:hover > span{
-        display: block;
+  }
+  .content:hover .tooltip,
+  .content_items:hover .tooltip {
+    visibility: visible;
+  }
+  .content_items {
+    margin: 0;
+  }
+  .content::before {
+    width: 98%;
+    margin: 0;
+  }
+  .content_items {
+    margin: 0;
+    padding: 0 1rem;
+    padding-bottom: 1.2rem;
+    line-height: 1.3rem;
+  }
+}
+
+@media screen and (min-width: bp.$md) {
+  .header {
+    border: 10px solid $default-color;
+    flex-direction: column;
+    min-height: 240px;
+    justify-content: start;
+    transition: 0.2s linear;
+    & > h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
     }
+    & > p {
+      margin-right: 0;
+    }
+    :nth-child(3) {
+      margin-top: auto;
+      font-weight: 500;
+      text-align: right;
+      font-size: 1.7rem;
+    }
+  }
+  .container {
+    min-width: 24%;
+    max-width: 24%;
+    padding-bottom: 3rem;
+    .btn {
+      width: 95%;
+      margin: 0;
+    }
+  }
+  .container:hover {
+    .header {
+      background-color: rgba(255, 252, 248, 0.753);
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+        0 10px 10px rgba(0, 0, 0, 0.22);
+    }
+  }
+  .subTitle {
+    font-weight: 100;
+    font-size: 1.1rem;
+  }
+  .content {
+    width: 98%;
+    padding: 25px 0;
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
+  .content_items {
+    margin: 0;
+  }
+  .content::before {
+    width: 98%;
+    margin: 0;
+  }
+  .content_items {
+    margin: 0;
+    padding: 0 1rem;
+    padding-bottom: 1.2rem;
+    line-height: 1.3rem;
+  }
+}
+
+@media screen and (min-width: bp.$lg) {
+  .header {
+    & > h2 {
+      font-size: 2.5rem;
+    }
+  }
+  .subTitle {
+    font-size: 1.2rem;
+  }
 }

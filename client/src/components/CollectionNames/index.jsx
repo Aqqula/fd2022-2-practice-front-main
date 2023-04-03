@@ -15,19 +15,22 @@ const CollectionNames = () => {
       [styles.active]: id === idBtn,
     });
     return (
-      <button key={id} onClick={()=>(setIdBtn(id))} className={classNames}>
+      <button key={id} onClick={() => setIdBtn(id)} className={classNames}>
         {name}
       </button>
     );
   };
   return (
     <section className={styles.container}>
-      <h2>Largest Collection of Brandable Names</h2>
-      <p>
-        Explore themed brand name collections created by our experienced team of
-        branding experts
-      </p>
-      {namesBtn.map(renderBtn)}
+      <div className={styles.wrapper}>
+        <h2>Largest Collection of Brandable Names</h2>
+        <p>
+          Explore themed brand name collections created by our experienced team
+          of branding experts
+        </p>
+      </div>
+
+      <div className={styles.wrapperBtn}>{namesBtn.map(renderBtn)}</div>
     </section>
   );
 };

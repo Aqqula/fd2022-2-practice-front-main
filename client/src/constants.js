@@ -2,9 +2,10 @@ const env = process.env.NODE_ENV || 'development';
 const serverIP = 'localhost';
 const serverPort = 5000;
 const constants = {
-  CONTACTS:{
-    PHONE:'(877) 355-3585',
+  CONTACTS: {
+    PHONE: '(877) 355-3585',
   },
+  MIN_WIDTH_PRICING: 815,
   CUSTOMER: 'customer',
   CREATOR: 'creator',
   CONTEST_STATUS_ACTIVE: 'active',
