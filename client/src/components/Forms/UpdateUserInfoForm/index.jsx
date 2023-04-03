@@ -6,7 +6,7 @@ import styles from './UpdateUserInfoForm.module.sass';
 import ImageUpload from '../../InputComponents/ImageUpload/ImageUpload';
 import FormInput from '../FormInput';
 import Schems from '../../../utils/validators/validationSchems';
-import Error from '../../Error/Error';
+import Error from '../../Error';
 
 const UpdateUserInfoForm = props => {
   const { onSubmit, submitting, error, clearUserError } = props;

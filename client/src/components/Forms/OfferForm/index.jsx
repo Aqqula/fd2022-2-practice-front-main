@@ -10,7 +10,7 @@ import styles from './OfferForm.module.sass';
 import ImageUpload from '../../InputComponents/ImageUpload/ImageUpload';
 import FormInput from '../FormInput';
 import Schems from '../../../utils/validators/validationSchems';
-import Error from '../../Error/Error';
+import Error from '../../Error';
 
 const OfferForm = props => {
   const renderOfferInput = () => {

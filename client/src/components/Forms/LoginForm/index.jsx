@@ -5,7 +5,7 @@ import { checkAuth, clearAuth } from '../../../store/slices/authSlice';
 import styles from './LoginForm.module.sass';
 import FormInput from '../FormInput';
 import Schems from '../../../utils/validators/validationSchems';
-import Error from '../../Error/Error';
+import Error from '../../Error';
 import CONSTANTS from '../../../constants';
 
 class LoginForm extends React.Component {

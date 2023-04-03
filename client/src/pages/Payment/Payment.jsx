@@ -5,7 +5,7 @@ import { pay, clearPaymentStore } from '../../store/slices/paymentSlice';
 import PayForm from '../../components/Forms/PayForm';
 import styles from './Payment.module.sass';
 import CONSTANTS from '../../constants';
-import Error from '../../components/Error/Error';
+import Error from '../../components/Error';
 
 const Payment = props => {
   const pay = values => {

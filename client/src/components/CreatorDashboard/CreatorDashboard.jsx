@@ -10,10 +10,10 @@ import {
   setNewCreatorFilter,
 } from '../../store/slices/contestsSlice';
 import { getDataForContest } from '../../store/slices/dataForContestSlice';
-import ContestsContainer from '../ContestsContainer/ContestsContainer';
-import ContestBox from '../ContestBox/ContestBox';
+import ContestsContainer from '../ContestsContainer';
+import ContestBox from '../ContestBox';
 import styles from './CreatorDashboard.module.sass';
-import TryAgain from '../TryAgain/TryAgain';
+import TryAgain from '../TryAgain';
 import CONSTANTS from '../../constants';
 
 const types = [

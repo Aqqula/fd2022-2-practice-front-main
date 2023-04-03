@@ -1,9 +1,9 @@
 import React from 'react';
 import CONSTANTS from '../../constants';
-import SelectInput from '../SelectInput/SelectInput';
+import SelectInput from '../SelectInput';
 import FormInput from '../Forms/FormInput';
 import styles from '../Forms/ContestForm/ContestForm.module.sass';
-import Spinner from '../Spinner/Spinner';
+import Spinner from '../Spinner';
 
 const OptionalSelects = (props) => {
   if (props.isFetching) {

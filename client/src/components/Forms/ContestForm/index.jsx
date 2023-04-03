@@ -5,14 +5,14 @@ import { withRouter } from 'react-router-dom';
 import CONSTANTS from '../../../constants';
 import { getDataForContest } from '../../../store/slices/dataForContestSlice';
 import styles from './ContestForm.module.sass';
-import Spinner from '../../Spinner/Spinner';
+import Spinner from '../../Spinner';
 import FormInput from '../FormInput';
-import SelectInput from '../../SelectInput/SelectInput';
+import SelectInput from '../../SelectInput';
 import FieldFileInput from '../../InputComponents/FieldFileInput/FieldFileInput';
 import FormTextArea from '../../InputComponents/FormTextArea/FormTextArea';
-import TryAgain from '../../TryAgain/TryAgain';
+import TryAgain from '../../TryAgain';
 import Schems from '../../../utils/validators/validationSchems';
-import OptionalSelects from '../../OptionalSelects/OptionalSelects';
+import OptionalSelects from '../../OptionalSelects';
 
 const variableOptions = {
   [CONSTANTS.NAME_CONTEST]: {

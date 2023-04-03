@@ -3,9 +3,9 @@ import { connect } from 'react-redux';
 import { updateBundle } from '../../store/slices/bundleSlice';
 import styles from './StartContestPage.module.sass';
 import CONSTANTS from '../../constants';
-import BundleBox from '../../components/BundleBox/BundleBox';
-import Footer from '../../components/Footer/Footer';
-import ProgressBar from '../../components/ProgressBar/ProgressBar';
+import BundleBox from '../../components/BundleBox';
+import Footer from '../../components/Footer';
+import ProgressBar from '../../components/ProgressBar';
 import Header from '../../components/Header';
 
 const StartContestPage = props => {

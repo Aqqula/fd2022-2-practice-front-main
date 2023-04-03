@@ -7,10 +7,10 @@ import {
   setNewCustomerFilter,
 } from '../../store/slices/contestsSlice';
 import CONSTANTS from '../../constants';
-import ContestsContainer from '../ContestsContainer/ContestsContainer';
-import ContestBox from '../ContestBox/ContestBox';
+import ContestsContainer from '../ContestsContainer';
+import ContestBox from '../ContestBox';
 import styles from './CustomerDashboard.module.sass';
-import TryAgain from '../TryAgain/TryAgain';
+import TryAgain from '../TryAgain';
 
 class CustomerDashboard extends React.Component {
   loadMore = startFrom => {

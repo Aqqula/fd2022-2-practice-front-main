@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 import { getUser } from '../../store/slices/userSlice';
-import Spinner from '../Spinner/Spinner';
+import Spinner from '../Spinner';
 
 const PrivateHoc = (Component, props) => {
   class Hoc extends React.Component {
